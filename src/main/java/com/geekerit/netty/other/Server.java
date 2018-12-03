@@ -14,13 +14,13 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * @ClassName NettyServer
+ * @ClassName Server
  * @Description TODO
  * @Author Aaryn
  * @Date 2018/11/30 16:30
  * @Version 1.0
  */
-public class NettyServer {
+public class Server {
 
 
     public static void main(String[] args) {

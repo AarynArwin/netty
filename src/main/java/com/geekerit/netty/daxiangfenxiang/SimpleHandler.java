@@ -4,6 +4,8 @@ import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
+import java.nio.charset.Charset;
+
 /**
  * @ClassName SimpleHandler
  * @Description TODO
@@ -19,12 +21,16 @@ public class SimpleHandler extends ChannelInboundHandlerAdapter {
 
         System.out.println("开始读取数据------");
         if (msg instanceof ByteBuf){
+//            ByteBuf byteBuf = (ByteBuf) msg;
+//
+//            String s = byteBuf.toString(Charset.defaultCharset());
+//
+//            System.out.println("服务端接收信息" + s);
+//
+//            ctx.channel().writeAndFlush("服务端回复消息~");
 
         }
     }
 
-    @Override
-    public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
-        super.userEventTriggered(ctx, evt);
-    }
+
 }
